@@ -13,10 +13,13 @@ public class Carro {
  */
     public void setPotencia(int potencia) {
         if (potencia > 0)
-        this.potencia = potencia;
+            this.potencia = potencia;
     }
 
     public void setVelocidad(double velocidad){
+        //actualizar si el dato es correcto sino setear el valor//
+        if (velocidad < 0)
+            velocidad=0;
         this.velocidad = velocidad;
     }
 
