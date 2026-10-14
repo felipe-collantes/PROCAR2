@@ -13,6 +13,10 @@ public class Carro {
         setVelocidad(velocidad);
     }
 
+    public Carro() {
+
+    }
+
     /*
     Ingreso de informacion
     metodos set()
