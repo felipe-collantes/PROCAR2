@@ -3,6 +3,10 @@ package negocio;
 public class Carro {
     private int potencia;
     private double velocidad;
+    //atributo de clase
+    private static int numcarros = 0;
+    //constate de clase
+    private static final double IVA = 0.15;
 
     public Carro(int potencia, double velocidad) {
         /*this.potencia = potencia;
@@ -11,10 +15,11 @@ public class Carro {
 
         setPotencia(potencia);
         setVelocidad(velocidad);
+        numcarros++;
     }
 
     public Carro() {
-
+        numcarros++;
     }
 
     /*
@@ -50,6 +55,15 @@ public class Carro {
 
     public double getVelocidad() {
         return velocidad;
+    }
+    public static int getNumcarros(){
+        return numcarros;
+    }
+    public static double getIva(){
+        return  IVA;
+    }
+    public double calcularPrecio(double precio){
+        return precio + (precio * IVA);
     }
 
     public void acelerar(){

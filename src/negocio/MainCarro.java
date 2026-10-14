@@ -2,9 +2,12 @@ package negocio;
 
 public class MainCarro {
     static void main() { //"psvm" y tab para crear el main automaticamente
+        System.out.println("El numero de objetos de tipo Carro creados son: "+Carro.getNumcarros());
+        System.out.println("El IVA de los vehiculos es:"+Carro.getIva());
         Carro c1 = new Carro(2,60);
         Carro c2 = new Carro(-5,-100);
         Carro c3 = new Carro();
+        System.out.println("El numero de objetos  de tipo Carro creados son:"+Carro.getNumcarros());
         /*
         c1.potencia = 2;
         c1.velocidad = 60;
