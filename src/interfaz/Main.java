@@ -5,7 +5,7 @@ import negocio.Carro;
 void main() {
 
     Carro c1;
-    c1 = new Carro(); //creando el objeto y asiganando c1
+    c1 = new Carro(2,60); //creando el objeto y asiganando c1
 
 
 
